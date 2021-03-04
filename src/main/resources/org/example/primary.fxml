@@ -69,13 +69,16 @@
             <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Switch to Secondary View" />
 
             <VBox>
-               <fx:define>
-                  <ToggleGroup fx:id="group" />
-               </fx:define>
+<!--               <fx:define>-->
+<!--                  <ToggleGroup fx:id="group" />-->
+<!--               </fx:define>-->
                <RadioButton fx:id="radioButton1" text="Computer vs Computer" toggleGroup="$group" />
                <RadioButton fx:id="radioButton2" text="Human vs Human" toggleGroup="$group" selected="true"/>
                <RadioButton fx:id="radioButton3" text="Human vs Computer" toggleGroup="$group"/>
             </VBox>
+
+            <Button fx:id="start" text="START" />
+
          </children>
       </VBox>
    </children>
