@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <VBox alignment="CENTER">
+         <GridPane gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="541.0" prefWidth="584.0" style="-fx-border-color: black; -fx-border-width: 2px;">
+            <children>
+               <Button id="b0" fx:id="b0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b4" fx:id="b4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b3" fx:id="b3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b1" fx:id="b1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b6" fx:id="b6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b7" fx:id="b7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b2" fx:id="b2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b5" fx:id="b5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+               <Button id="b8" fx:id="b8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="190.0" prefWidth="310.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="70.0" />
+                  </font></Button>
+            </children>
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+         </GridPane>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </VBox>
+      <VBox minWidth="200">
+         <children>
+            <Label text="Primary View" />
+            <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Switch to Secondary View" />
+
+            <VBox>
+               <fx:define>
+                  <ToggleGroup fx:id="group" />
+               </fx:define>
+               <RadioButton fx:id="radioButton1" text="Computer vs Computer" toggleGroup="$group" />
+               <RadioButton fx:id="radioButton2" text="Human vs Human" toggleGroup="$group" selected="true"/>
+               <RadioButton fx:id="radioButton3" text="Human vs Computer" toggleGroup="$group"/>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
